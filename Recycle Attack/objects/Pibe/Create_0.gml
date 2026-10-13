@@ -1,3 +1,6 @@
+
+
+
 gravedad = 0.7;   
 vel_caida = 0;
 instancia = 0;

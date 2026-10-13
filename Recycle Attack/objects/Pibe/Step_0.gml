@@ -1,36 +1,23 @@
+
+
 #region// MOVIMIENTO HORIZONTAL
 
-var hsp = 0;
+var camina = false;
 var sprint = keyboard_check(vk_lshift);
 var izq = keyboard_check(ord("A"));
 var der = keyboard_check(ord("D"));
+var move = der - izq;
+var move_speed = sprint ? (vel * 2) : vel;
+var hsp = move * move_speed;
 
-if (izq && sprint){
-	hsp = -vel*2;	
-	miraizq = true;
-	mirader = false; 
-	image_xscale = -1;	
+if (move != 0) {
+    image_xscale = move;     
+    mirader = (move == 1);
+    miraizq = (move == -1);
+    sprite_index = walkPersonaje;
+} else {
+    sprite_index = character_malePerson_idle;
 }
-else if (izq) {
-    hsp = -vel; 
-	miraizq = true;
-	mirader = false;
-	image_xscale = -1;
-}
-
-if (der && sprint){
-	hsp = vel*2; 
-	miraizq = false;
-	mirader = true; 
-	image_xscale = 1;
-}
-else if (der) {
-    hsp = vel; 
-	miraizq = false;
-	mirader = true;
-	image_xscale = 1;
-}
-
 // Colisiones horizontales
 if (hsp != 0) {
     var dir = sign(hsp);
@@ -43,7 +30,6 @@ if (hsp != 0) {
     }
 }
 #endregion
-
 
 #region // GRAVEDAD
 vel_caida += gravedad;
