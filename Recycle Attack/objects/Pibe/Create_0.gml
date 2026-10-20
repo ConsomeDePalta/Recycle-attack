@@ -1,5 +1,6 @@
 
-
+tiene_spray = false;
+mi_spray = noone;
 
 gravedad = 0.7;   
 vel_caida = 0;
