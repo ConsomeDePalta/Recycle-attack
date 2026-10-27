@@ -40,6 +40,8 @@
   "name":"Recycle Attack",
   "resources":[
     {"id":{"name":"Colision","path":"objects/Colision/Colision.yy",},},
+    {"id":{"name":"Flor","path":"objects/Flor/Flor.yy",},},
+    {"id":{"name":"Fumador","path":"objects/Fumador/Fumador.yy",},},
     {"id":{"name":"obj_fuente","path":"objects/obj_fuente/obj_fuente.yy",},},
     {"id":{"name":"Pibe","path":"objects/Pibe/Pibe.yy",},},
     {"id":{"name":"Spray","path":"objects/Spray/Spray.yy",},},
