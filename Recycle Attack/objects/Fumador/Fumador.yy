@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"SpriteFumador",
+    "path":"sprites/SpriteFumador/SpriteFumador.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
