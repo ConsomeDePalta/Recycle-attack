@@ -1,16 +1,17 @@
-
 // Detecta si hay una instancia de Fumador pisando la flor
 var fumador_encima = place_meeting(x, y, Fumador);
 
 if (fumador_encima) {
-    tiempo_dano += 1;
-    
-    // Al cumplirse 1 segundo (60 frames)
+    tiempo_dano += 5;
+      
+    // Al llegar a 60 (con += 5 ocurre cada 12 frames, es decir, quita 5 de vida por segundo)
     if (tiempo_dano >= 60) {
-        vida -= 1;
-        tiempo_dano = 0; // Reinicia el contador para el siguiente segundo
+        if (instance_exists(Vida_flor)) {
+            Vida_flor.vida -= 1;
+        }
+        tiempo_dano = 0; // Reinicia el contador
         
-        // Destello rojo momentáneo al recibir daño
+        // Destello rojo al recibir daño
         image_blend = c_red;
     }
 } else {
@@ -19,8 +20,8 @@ if (fumador_encima) {
     image_blend = c_white;
 }
 
-// Si la flor pierde toda su vida
-if (vida <= 0) {
-    vida = 0;
+// Si la vida general llega a 0, la flor se destruye
+if (instance_exists(Vida_flor) && Vida_flor.vida <= 0) {
+    Vida_flor.vida = 0;
     instance_destroy(); // Se destruye al llegar a 0
 }
