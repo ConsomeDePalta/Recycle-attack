@@ -42,6 +42,7 @@
   "resources":[
     {"id":{"name":"Camara","path":"objects/Camara/Camara.yy",},},
     {"id":{"name":"Colision","path":"objects/Colision/Colision.yy",},},
+    {"id":{"name":"Derrota","path":"objects/Derrota/Derrota.yy",},},
     {"id":{"name":"Flor","path":"objects/Flor/Flor.yy",},},
     {"id":{"name":"Fumador","path":"objects/Fumador/Fumador.yy",},},
     {"id":{"name":"obj_fuente","path":"objects/obj_fuente/obj_fuente.yy",},},
@@ -49,8 +50,13 @@
     {"id":{"name":"Spawner_Fumador","path":"objects/Spawner_Fumador/Spawner_Fumador.yy",},},
     {"id":{"name":"Spray","path":"objects/Spray/Spray.yy",},},
     {"id":{"name":"Sprayhitbox","path":"objects/Sprayhitbox/Sprayhitbox.yy",},},
+    {"id":{"name":"Tutorial","path":"objects/Tutorial/Tutorial.yy",},},
+    {"id":{"name":"Victoria","path":"objects/Victoria/Victoria.yy",},},
     {"id":{"name":"Vida_flor","path":"objects/Vida_flor/Vida_flor.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"id":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
     {"id":{"name":"character_malePerson_idle","path":"sprites/character_malePerson_idle/character_malePerson_idle.yy",},},
     {"id":{"name":"Fondo","path":"sprites/Fondo/Fondo.yy",},},
     {"id":{"name":"Grifo","path":"sprites/Grifo/Grifo.yy",},},
@@ -67,7 +73,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Room4","path":"rooms/Room4/Room4.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

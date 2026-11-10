@@ -4,3 +4,4 @@ gravedad = 0.7;
 vel_caida = 0;
 
 cigarro_activo = true; // Permite que solo dañe la flor si no le han apagado el cigarro
+

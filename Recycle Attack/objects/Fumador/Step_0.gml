@@ -14,7 +14,7 @@ if (choca_pared || llega_al_borde) {
 x -= hsp;
 image_xscale = dir;
 
-// --- 2. GRAVEDAD Y COLISIÓN CON EL SUELO ---
+// Gravedad y colision con el suelo
 vel_caida += gravedad;
 
 if (place_meeting(x, y + vel_caida, Colision)) {
